@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Patient Monitoring System",
+    "description": "A C++ terminal-based system that records and monitors patient vitals like temperature, heart rate, and blood pressure. It provides automated health alert levels (Green, Yellow, Red) and sends simulated notifications to GPs or hospitals for critical conditions.",
+    "technologies": ["C++", "OOP", "CLI"],
+    "images": ["patient_green.png", "patient_yellow.png", "patient_red.png"],
+    "url": "https://github.com/HarshPatel093/PatientMonitoringSystem",
+     "language": "C++"
+  },
+
+  {
+  "name": "Card Game Engine",
+  "description": "A C++ terminal-based game inspired by Dead Man’s Draw++, where players take turns drawing cards and executing strategic actions like Kraken, Map, Cannon, and more. Features dynamic card interactions, scoring, and bust logic.",
+  "technologies": ["C++", "OOP", "Game Logic"],
+  "images": ["cardGameEngine.png", "cardGameEngine2.png", "cardGameEngine3.png"],
+  "url": "https://github.com/HarshPatel093/CardGameEngine",
+   "language": "C++"
+},
+
+{
+  "name": "Petals Around the Rose",
+  "description": "A Python implementation of the classic logic puzzle where players must guess a hidden pattern based on five dice rolls. The game gives subtle hints and tracks performance, challenging players to discover the logic behind the scoring system.",
+  "technologies": ["Python", "CLI", "Random", "Modular Design"],
+  "images": ["petals1.png", "petals2.png"],
+  "url": "https://github.com/HarshPatel093/petals-around-the-rose",
+  "language": "Python"
+},
+
+{
+  "name": "Wordle Clone",
+  "description": "A Python terminal-based word guessing game inspired by Wordle. Users get 6 attempts to guess a 5-letter word. Feedback is provided for correct, incorrect, and misplaced letters.",
+  "technologies": ["Python", "CLI", "File I/O"],
+  "images": ["wordle.png"],
+  "url": "https://github.com/HarshPatel093/wordle-game",
+  "language": "Python"
+},
+
+{
+  "name": "Potion Lab",
+  "description": "A fantasy-themed Python simulator that allows an alchemist to mix potions using herbs and catalysts. It includes ingredient refinement, potion boosting effects, and unit testing.",
+  "technologies": ["Python", "OOP", "Unit Testing"],
+  "images": ["potion.png"],
+  "url": "https://github.com/HarshPatel093/potion-lab",
+  "language": "Python"
+},
+
+{
+  "name": "Binary Converter Tool",
+  "description": "A Python terminal-based utility that allows users to convert numbers between decimal and binary formats. It also includes a binary counting feature for educational use.",
+  "technologies": ["Python", "CLI"],
+  "images": ["binary1.png", "binary2.png"],
+  "url": "https://github.com/HarshPatel093/binary-converter-tool",
+  "language": "Python"
+},
+
+{
+  "name": "Meeting Timer App",
+  "description": "A web-based timer designed to keep meetings on track. It provides a clean UI to set the meeting duration, start/pause/reset the timer, and alert users when time is up. Ideal for group presentations, agile stand-ups, or productivity sprints. Click on the project name to view the live webpage.",
+  "technologies": ["HTML", "CSS", "JavaScript"],
+  "images": ["meeting1.png", "meeting2.png"],
+  "url": "https://harshpatel093.github.io/meeting-timer-app/",
+  "language": "JavaScript"
+},
+
+{
+  "name": "Farm Simulator",
+  "description": "A Java-based terminal game that simulates managing a virtual farm. Players can perform actions like planting, harvesting, feeding animals, and tracking progress over days. Designed with object-oriented principles, this turn-based game challenges players to maintain their farm's efficiency and make strategic decisions. Click the project name to view the source code on GitHub.",
+  "technologies": ["Java", "OOP", "CLI"],
+  "images": ["farm1.png", "farm2.png", "farm3.png", "farm4.png", "farm5.png"],
+  "url": "https://github.com/HarshPatel093/Farm-Simulator",
+  "language": "Java"
+},
+
+{
+  "name": "Crypto Price Tracker",
+  "description": "An interactive Streamlit web app that lets users track live and historical prices of popular cryptocurrencies like Bitcoin, Ethereum, and Litecoin. Users can choose from multiple currencies (USD, AUD, EUR, INR) and visualize prices for the past 1 to 60 days. Built with real-time data from the CoinGecko API and customizable UI. Click the project name to view the source code on GitHub.",
+  "technologies": ["Python", "Streamlit", "API", "Data Visualization"],
+  "images": ["crypto1.png", "crypto2.png", "crypto3.png"],
+  "url": "https://github.com/HarshPatel093/crypto-tracker",
+  "language": "Python"
+}
+
+]

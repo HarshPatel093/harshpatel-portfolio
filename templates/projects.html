@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Projects</h2>
+
+<!-- Tab Buttons -->
+<div class="tabs">
+  <button class="tab-button active" onclick="showTab('C++')">C++</button>
+  <button class="tab-button" onclick="showTab('Python')">Python</button>
+  <button class="tab-button" onclick="showTab('Java')">Java</button>
+  <button class="tab-button" onclick="showTab('JavaScript')">JavaScript</button>
+  <button class="tab-button" onclick="showTab('Swift')">Swift</button>
+</div>
+
+<!-- Tab Content -->
+{% set languages = ['C++', 'Python', 'Java', 'JavaScript', 'Swift'] %}
+{% for lang in languages %}
+  <div class="tab-content" id="{{ lang }}" style="{% if loop.first %}display:block{% else %}display:none{% endif %}">
+    {% set lang_projects = projects | selectattr("language", "equalto", lang) | list %}
+    {% for project in lang_projects %}
+      <div class="project">
+        <h3><a href="{{ project.url }}" target="_blank">{{ project.name }}</a>
+  <span class="tooltip-icon" title="Click on project name to view GitHub repository">ⓘ</span></h3>
+        <p>{{ project.description }}</p>
+        <p class="tech">{{ project.technologies | join(', ') }}</p>
+        {% if project.images %}
+          {% for image in project.images %}
+            <img src="assets/screenshots/{{ image }}" alt="{{ project.name }}">
+          {% endfor %}
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}
+
+<!-- Simple Tab Switcher Script -->
+<script>
+  function showTab(language) {
+    const contents = document.querySelectorAll('.tab-content');
+    const buttons = document.querySelectorAll('.tab-button');
+    contents.forEach(el => el.style.display = 'none');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    document.getElementById(language).style.display = 'block';
+    event.target.classList.add('active');
+  }
+</script>
+
+<style>
+  .tabs {
+    margin-bottom: 1rem;
+  }
+
+  .tab-button {
+    background-color: transparent;
+    border: 1px solid #00ffcc;
+    color: #00ffcc;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .tab-button.active {
+    background-color: #00ffcc;
+    color: #0a0f24;
+  }
+
+  .tab-content {
+    margin-top: 1rem;
+  }
+
+  .project img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+  }
+</style>
+
+{% endblock %}

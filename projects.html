@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a192f;
+      --text: #ccd6f6;
+      --highlight: #64ffda;
+      --muted: #8892b0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Fira Code', monospace;
+      margin: 0;
+    }
+
+    header {
+      background: var(--bg);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #112240;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 40px;
+      margin: 0 auto;
+    }
+
+    a.resume {
+      border: 1px solid var(--highlight);
+      padding: 6px 12px;
+      color: var(--highlight);
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .project img {
+      max-width: 100%;
+      margin-top: 10px;
+      border-radius: 4px;
+    }
+
+    .project {
+      background: #112240;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .tech {
+      font-size: 0.9em;
+      color: var(--muted);
+    }
+
+    a {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+    </nav>
+    <a class="resume" href="assets/Resume.pdf" target="_blank">Resume</a>
+  </header>
+
+  <div class="container">
+    
+<h2>Projects</h2>
+
+<!-- Tab Buttons -->
+<div class="tabs">
+  <button class="tab-button active" onclick="showTab('C++')">C++</button>
+  <button class="tab-button" onclick="showTab('Python')">Python</button>
+  <button class="tab-button" onclick="showTab('Java')">Java</button>
+  <button class="tab-button" onclick="showTab('JavaScript')">JavaScript</button>
+  <button class="tab-button" onclick="showTab('Swift')">Swift</button>
+</div>
+
+<!-- Tab Content -->
+
+
+  <div class="tab-content" id="C++" style="display:block">
+    
+    
+      <div class="project">
+        <h3><a href="https://github.com/HarshPatel093/PatientMonitoringSystem" target="_blank">Patient Monitoring System</a>
+  <span class="tooltip-icon" title="Click on project name to view GitHub repository">ⓘ</span></h3>
+        <p>A C++ terminal-based system that records and monitors patient vitals like temperature, heart rate, and blood pressure. It provides automated health alert levels (Green, Yellow, Red) and sends simulated notifications to GPs or hospitals for critical conditions.</p>
+        <p class="tech">C++, OOP, CLI</p>
+        
+          
+            <img src="assets/screenshots/patient_green.png" alt="Patient Monitoring System">
+          
+            <img src="assets/screenshots/patient_yellow.png" alt="Patient Monitoring System">
+          
+            <img src="assets/screenshots/patient_red.png" alt="Patient Monitoring System">
+          
+        
+      </div>
+    
+      <div class="project">
+        <h3><a href="https://github.com/HarshPatel093/CardGameEngine" target="_blank">Card Game Engine</a>
+  <span class="tooltip-icon" title="Click on project name to view GitHub repository">ⓘ</span></h3>
+        <p>A C++ terminal-based game inspired by Dead Manâ€™s Draw++, where players take turns drawing cards and executing strategic actions like Kraken, Map, Cannon, and more. Features dynamic card interactions, scoring, and bust logic.</p>
+        <p class="tech">C++, OOP, Game Logic</p>
+        
+          
+            <img src="assets/screenshots/cardGameEngine.png" alt="Card Game Engine">
+          
+            <img src="assets/screenshots/cardGameEngine2.png" alt="Card Game Engine">
+          
+            <img src="assets/screenshots/cardGameEngine3.png" alt="Card Game Engine">
+          
+        
+      </div>
+    
+  </div>
+
+  <div class="tab-content" id="Python" style="display:none">
+    
+    
+      <div class="project">
+        <h3><a href="https://github.com/HarshPatel093/petals-around-the-rose" target="_blank">Petals Around the Rose</a>
+  <span class="tooltip-icon" title="Click on project name to view GitHub repository">ⓘ</span></h3>
+        <p>A Python implementation of the classic logic puzzle where players must guess a hidden pattern based on five dice rolls. The game gives subtle hints and tracks performance, challenging players to discover the logic behind the scoring system.</p>
+        <p class="tech">Python, CLI, Random, Modular Design</p>
+        
+          
+            <img src="assets/screenshots/petals1.png" alt="Petals Around the Rose">
+          
+            <img src="assets/screenshots/petals2.png" alt="Petals Around the Rose">
+          
+        
+      </div>
+    
+      <div class="project">
+        <h3><a href="https://github.com/HarshPatel093/wordle-game" target="_blank">Wordle Clone</a>
+  <span class="tooltip-icon" title="Click on project name to view GitHub repository">ⓘ</span></h3>
+        <p>A Python terminal-based word guessing game inspired by Wordle. Users get 6 attempts to guess a 5-letter word. Feedback is provided for correct, incorrect, and misplaced letters.</p>
+        <p class="tech">Python, CLI, File I/O</p>
+        
+          
+            <img src="assets/screenshots/wordle.png" alt="Wordle Clone">
+          
+        
+      </div>
+    
+      <div class="project">
+        <h3><a href="https://github.com/HarshPatel093/potion-lab" target="_blank">Potion Lab</a>
+  <span class="tooltip-icon" title="Click on project name to view GitHub repository">ⓘ</span></h3>
+        <p>A fantasy-themed Python simulator that allows an alchemist to mix potions using herbs and catalysts. It includes ingredient refinement, potion boosting effects, and unit testing.</p>
+        <p class="tech">Python, OOP, Unit Testing</p>
+        
+          
+            <img src="assets/screenshots/potion.png" alt="Potion Lab">
+          
+        
+      </div>
+    
+      <div class="project">
+        <h3><a href="https://github.com/HarshPatel093/binary-converter-tool" target="_blank">Binary Converter Tool</a>
+  <span class="tooltip-icon" title="Click on project name to view GitHub repository">ⓘ</span></h3>
+        <p>A Python terminal-based utility that allows users to convert numbers between decimal and binary formats. It also includes a binary counting feature for educational use.</p>
+        <p class="tech">Python, CLI</p>
+        
+          
+            <img src="assets/screenshots/binary1.png" alt="Binary Converter Tool">
+          
+            <img src="assets/screenshots/binary2.png" alt="Binary Converter Tool">
+          
+        
+      </div>
+    
+      <div class="project">
+        <h3><a href="https://github.com/HarshPatel093/crypto-tracker" target="_blank">Crypto Price Tracker</a>
+  <span class="tooltip-icon" title="Click on project name to view GitHub repository">ⓘ</span></h3>
+        <p>An interactive Streamlit web app that lets users track live and historical prices of popular cryptocurrencies like Bitcoin, Ethereum, and Litecoin. Users can choose from multiple currencies (USD, AUD, EUR, INR) and visualize prices for the past 1 to 60 days. Built with real-time data from the CoinGecko API and customizable UI. Click the project name to view the source code on GitHub.</p>
+        <p class="tech">Python, Streamlit, API, Data Visualization</p>
+        
+          
+            <img src="assets/screenshots/crypto1.png" alt="Crypto Price Tracker">
+          
+            <img src="assets/screenshots/crypto2.png" alt="Crypto Price Tracker">
+          
+            <img src="assets/screenshots/crypto3.png" alt="Crypto Price Tracker">
+          
+        
+      </div>
+    
+  </div>
+
+  <div class="tab-content" id="Java" style="display:none">
+    
+    
+      <div class="project">
+        <h3><a href="https://github.com/HarshPatel093/Farm-Simulator" target="_blank">Farm Simulator</a>
+  <span class="tooltip-icon" title="Click on project name to view GitHub repository">ⓘ</span></h3>
+        <p>A Java-based terminal game that simulates managing a virtual farm. Players can perform actions like planting, harvesting, feeding animals, and tracking progress over days. Designed with object-oriented principles, this turn-based game challenges players to maintain their farm's efficiency and make strategic decisions. Click the project name to view the source code on GitHub.</p>
+        <p class="tech">Java, OOP, CLI</p>
+        
+          
+            <img src="assets/screenshots/farm1.png" alt="Farm Simulator">
+          
+            <img src="assets/screenshots/farm2.png" alt="Farm Simulator">
+          
+            <img src="assets/screenshots/farm3.png" alt="Farm Simulator">
+          
+            <img src="assets/screenshots/farm4.png" alt="Farm Simulator">
+          
+            <img src="assets/screenshots/farm5.png" alt="Farm Simulator">
+          
+        
+      </div>
+    
+  </div>
+
+  <div class="tab-content" id="JavaScript" style="display:none">
+    
+    
+      <div class="project">
+        <h3><a href="https://harshpatel093.github.io/meeting-timer-app/" target="_blank">Meeting Timer App</a>
+  <span class="tooltip-icon" title="Click on project name to view GitHub repository">ⓘ</span></h3>
+        <p>A web-based timer designed to keep meetings on track. It provides a clean UI to set the meeting duration, start/pause/reset the timer, and alert users when time is up. Ideal for group presentations, agile stand-ups, or productivity sprints. Click on the project name to view the live webpage.</p>
+        <p class="tech">HTML, CSS, JavaScript</p>
+        
+          
+            <img src="assets/screenshots/meeting1.png" alt="Meeting Timer App">
+          
+            <img src="assets/screenshots/meeting2.png" alt="Meeting Timer App">
+          
+        
+      </div>
+    
+  </div>
+
+  <div class="tab-content" id="Swift" style="display:none">
+    
+    
+  </div>
+
+
+<!-- Simple Tab Switcher Script -->
+<script>
+  function showTab(language) {
+    const contents = document.querySelectorAll('.tab-content');
+    const buttons = document.querySelectorAll('.tab-button');
+    contents.forEach(el => el.style.display = 'none');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    document.getElementById(language).style.display = 'block';
+    event.target.classList.add('active');
+  }
+</script>
+
+<style>
+  .tabs {
+    margin-bottom: 1rem;
+  }
+
+  .tab-button {
+    background-color: transparent;
+    border: 1px solid #00ffcc;
+    color: #00ffcc;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .tab-button.active {
+    background-color: #00ffcc;
+    color: #0a0f24;
+  }
+
+  .tab-content {
+    margin-top: 1rem;
+  }
+
+  .project img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+  }
+</style>
+
+
+  </div>
+</body>
+</html>
